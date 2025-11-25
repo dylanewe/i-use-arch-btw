@@ -1,0 +1,95 @@
+/*******************************************************************************
+ * Ayu Mirage Theme for Rofi
+ * Based on the Ayu Mirage color scheme
+ *******************************************************************************/
+
+* {
+    /* Ayu Mirage Color Palette */
+    bg-primary:     #1f2430;
+    bg-secondary:   #232834;
+    bg-selected:    #343f4c;
+    fg-primary:     #cbccc6;
+    fg-dimmed:      #5c6773;
+    accent-cyan:    #5ccfe6;
+
+    /* Transparency (90% opacity) */
+    bg-transparent: #1f2430E6;
+
+    background-color: transparent;
+    text-color:       @fg-primary;
+
+    margin:  0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    background-color: @bg-transparent;
+    border:           2px solid;
+    border-color:     @accent-cyan;
+    border-radius:    10px;
+    width:            40%;
+    location:         center;
+    anchor:           center;
+    padding:          20px;
+}
+
+mainbox {
+    background-color: transparent;
+    spacing:          15px;
+}
+
+inputbar {
+    background-color: @bg-secondary;
+    border-radius:    8px;
+    padding:          12px 16px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @accent-cyan;
+    font:             "monospace bold 11";
+}
+
+entry {
+    placeholder:       "Search applications...";
+    placeholder-color: @fg-dimmed;
+    text-color:        @fg-primary;
+}
+
+listview {
+    background-color: transparent;
+    lines:            8;
+    spacing:          5px;
+    scrollbar:        false;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @fg-primary;
+    border-radius:    6px;
+    padding:          10px 14px;
+}
+
+element selected {
+    background-color: @bg-selected;
+    text-color:       @accent-cyan;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}
+
+message {
+    background-color: @bg-secondary;
+    border-radius:    8px;
+    padding:          10px;
+}
+
+textbox {
+    background-color: inherit;
+    text-color:       @fg-primary;
+}
